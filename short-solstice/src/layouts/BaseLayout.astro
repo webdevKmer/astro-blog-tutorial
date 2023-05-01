@@ -1,5 +1,6 @@
 ---
 import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
 import BaseHead from "./BaseHead.astro";
 const {title = "Default Title", description = "Default Description"} = Astro.props
 
@@ -8,6 +9,7 @@ const {title = "Default Title", description = "Default Description"} = Astro.pro
 <html lang="en">
 	<BaseHead title={title} description={description}></BaseHead>
 	<body>
+		<Navbar/>
 		<slot>Welcome to this page!</slot>
 		<Footer/>
 	</body>
