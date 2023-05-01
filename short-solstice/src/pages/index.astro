@@ -1,7 +1,9 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro"
+
+const pageTitle = "Home Page"
 ---
 
-<BaseLayout title="Home">
-	<h1>Homepage</h1>
+<BaseLayout title={pageTitle}>
+	<h1>{pageTitle}</h1>
 </BaseLayout>
