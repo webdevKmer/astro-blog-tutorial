@@ -1,12 +1,16 @@
 ---
-
+import Social from './Social.astro'
 ---
-<footer>
-    <h5>My footer - &copy; WebDev Kmer Blog 2023</h5>
-</footer>
-
 <style>
-    h5{
-        text-align: center;
-    }
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
 </style>
+<footer>
+  <p>Learn more about my projects on <Social platform = "github" username = "webdevkmer"/>!</p>
+  <Social platform = "github" username = "webdevkmer"/>
+  <Social platform = "youtube" username = "patledur"/>
+</footer>
